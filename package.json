@@ -1,0 +1,20 @@
+{
+  "name": "hng9_task2",
+  "version": "1.0.0",
+  "description": "create an end point that will perform simple arithemetic task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Titiloye Temitope Michael",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "enum": "^3.0.4",
+    "express": "^4.18.2"
+  }
+}
