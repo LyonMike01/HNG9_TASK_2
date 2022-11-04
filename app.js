@@ -61,4 +61,4 @@ app.post("/", (req, res) => {
     .status(200)
     .json({ slackUsername: slackUsername, result, operation_type });
 });
-app.listen(PORT || 8000, () => console.log(`server running on ${PORT}`));
+app.listen(PORT, () => console.log(`server running on ${PORT}`));
