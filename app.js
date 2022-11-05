@@ -57,8 +57,13 @@ app.post("/", (req, res) => {
         result = x * y;
         break;
   }
-  return res
-    .status(200)
-    .json({ slackUsername: slackUsername, result, operation_type });
+
+
+  const myResponse = {
+    slackUsername: slackUsername,
+    result: result,
+    operation_type: operation_type
+}
+res.status(201).json(myResponse);
 });
-app.listen(PORT, () => console.log(`server running on ${PORT}`));
+app.listen(PORT || 8000, () => console.log(`server running on ${PORT}`));
