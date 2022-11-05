@@ -64,6 +64,6 @@ app.post("/", (req, res) => {
     result: result,
     operation_type: operation_type
 }
-res.status(201).json(myResponse);
+res.status(200).json(myResponse);
 });
 app.listen(PORT || 8000, () => console.log(`server running on ${PORT}`));
